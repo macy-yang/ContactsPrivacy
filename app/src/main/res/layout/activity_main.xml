@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/contactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+    <Button
+        android:id="@+id/openSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="打开应用设置"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/addContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactsListView"
+        android:layout_marginTop="16dp"
+        android:text="新增联系人"/>
+
+    <Button
+        android:id="@+id/deleteContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addContactButton"
+        android:layout_marginTop="16dp"
+        android:text="删除联系人"/>
+
+    <Button
+        android:id="@+id/updateContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteContactButton"
+        android:layout_marginTop="16dp"
+        android:text="修改联系人"/>
+
+    <Button
+        android:id="@+id/queryContactsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateContactButton"
+        android:layout_marginTop="16dp"
+        android:text="查询联系人"/>
+
+</RelativeLayout>
